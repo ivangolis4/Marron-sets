@@ -67,40 +67,40 @@ def my_classmate_birth_monh():
     for i in months:
         a1 = input().upper()
         if a1 == months[0]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[1]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[2]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[3]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[4]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[5]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[6]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[7]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[8]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[9]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[10]:
-            s1.add(a1)
+            s2.add(a1)
             break
         elif a1 == months[11]:
-            s1.add(a1)
+            s2.add(a1)
             break
         else:
             print("Invalid Input.")
