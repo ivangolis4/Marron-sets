@@ -1,119 +1,134 @@
-months = ["JANUARY","FEBRUARY","MARCH","APRIL",
-          "MAY","JUNE","JULY","AUGUST",
-          "SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"]
-
-#IVAN N. GOLIS
-
-first_group = set([])
-second_group = set([])
-s1 = set([])
-s2 = set([])
-def userInput():
+def num_of_length():
     try:
-        return int(input("Enter length:"))
+        return int(input("Enter Length: "))
     except ValueError:
-        return userInput()
+        print("Invalid!")
+        return num_of_length()
 
 
-def my_birth_month():
-    print("Enter your birth month:")
-    for i in months:
-        a1 = input().upper()
-        if a1 == months[0]:
-            s1.add(a1)
-            break
-        elif a1 == months[1]:
-            s1.add(a1)
-            break
-        elif a1 == months[2]:
-            s1.add(a1)
-            break
-        elif a1 == months[3]:
-            s1.add(a1)
-            break
-        elif a1 == months[4]:
-            s1.add(a1)
-            break
-        elif a1 == months[5]:
-            s1.add(a1)
-            break
-        elif a1 == months[6]:
-            s1.add(a1)
-            break
-        elif a1 == months[7]:
-            s1.add(a1)
-            break
-        elif a1 == months[8]:
-            s1.add(a1)
-            break
-        elif a1 == months[9]:
-            s1.add(a1)
-            break
-        elif a1 == months[10]:
-            s1.add(a1)
-            break
-        elif a1 == months[11]:
-            s1.add(a1)
-            break
+def your_birth_month():
+    count = 0
+    month = input("Enter your Birth Month: ").lower()
+    while count < 1:
+        if month == "january":
+            count += 1
+            m1.add(month)
+        elif month == "february":
+            count += 1
+            m1.add(month)
+        elif month == "march":
+            count += 1
+            m1.add(month)
+        elif month == "april":
+            count += 1
+            m1.add(month)
+        elif month == "may":
+            count += 1
+            m1.add(month)
+        elif month == "june":
+            count += 1
+            m1.add(month)
+        elif month == "july":
+            count += 1
+            m1.add(month)
+        elif month == "august":
+            count += 1
+            m1.add(month)
+        elif month == "september":
+            count += 1
+            m1.add(month)
+        elif month == "october":
+            count += 1
+            m1.add(month)
+        elif month == "november":
+            count += 1
+            m1.add(month)
+        elif month == "december":
+            count += 1
+            m1.add(month)
         else:
-            print("Invalid Input.")
-            return my_birth_month()
+            print("Invalid Input!")
+            return your_birth_month()
 
 
-
-
-def my_classmate_birth_monh():
-    print("Enter your classmate birth month:")
-    for i in months:
-        a1 = input().upper()
-        if a1 == months[0]:
-            s2.add(a1)
-            break
-        elif a1 == months[1]:
-            s2.add(a1)
-            break
-        elif a1 == months[2]:
-            s2.add(a1)
-            break
-        elif a1 == months[3]:
-            s2.add(a1)
-            break
-        elif a1 == months[4]:
-            s2.add(a1)
-            break
-        elif a1 == months[5]:
-            s2.add(a1)
-            break
-        elif a1 == months[6]:
-            s2.add(a1)
-            break
-        elif a1 == months[7]:
-            s2.add(a1)
-            break
-        elif a1 == months[8]:
-            s2.add(a1)
-            break
-        elif a1 == months[9]:
-            s2.add(a1)
-            break
-        elif a1 == months[10]:
-            s2.add(a1)
-            break
-        elif a1 == months[11]:
-            s2.add(a1)
-            break
+def classmate_birth_month():
+    count2 = 0
+    month2 = input("Enter your Classmates Birth Month: ").lower()
+    while count2 < 1:
+        if month2 == "january":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "february":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "march":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "april":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "may":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "june":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "july":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "august":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "september":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "october":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "november":
+            count2 += 1
+            m2.add(month2)
+        elif month2 == "december":
+            count2 += 1
+            m2.add(month2)
         else:
-            print("Invalid Input.")
-            return my_birth_month()
+            print("Invalid Input!")
+            return classmate_birth_month()
 
 
+m1 = set([])
+m2 = set([])
+
+g1 = set([])
+g2 = set([])
+length = num_of_length()
 
 
-my_birth_month()
-my_classmate_birth_monh()
+print("Enter first group: ")
+for i in range(length):
+    group1 = input()
+    g1.add(group1)
 
-if s1 == s2:
-    print("The same birth month.")
+print("Enter Second Group:")
+for o in range(length):
+    group2 = input()
+    g2.add(group2)
+
+
+print("set1: ", g1)
+print("set2: ", g2)
+
+print("Union: ", g1.union(g2))
+print("Intersection: ", g1.intersection(g2))
+print("Difference: ", g1.difference(g2))
+
+ybm = your_birth_month()
+
+cm = classmate_birth_month()
+
+
+if m1 == m2:
+    print("The same Birth Month")
+
 else:
-    print("Not the same birth month.")
-
+    print("Not the same Birth Month")
